@@ -45,15 +45,6 @@ for car in cars:
 # Conditional Tests
 # Checking for Equality
 print(" ")
-print('Test for equality')
-car_driven = 'tie'
-for car_drive in car_driven:
-    if car_driven == 'camaro':
-        print("hi")
-        break
-    else:
-        print("Nice try.")
-        break
 
 # More tests for equality
 print(" ")
@@ -117,3 +108,23 @@ print(" ")
 print("\nIs car == 'audi'? I predict False.")
 print(car == 'audi')
 print(" ")
+
+# add user input to dictionary
+
+rental_properties = {}
+
+rental_open = True
+
+while rental_open:
+    username = input("\nWhat is your name? ")
+    rental_property = input("What is the address of the property you would like to rent?")
+
+    rental_properties[username] = rental_property
+
+    repeat = input("\nDo you know anyone who might like to rent out a property?")
+    if repeat == 'no':
+        rental_open = False
+
+print("\n--- Property to rent ---")
+for username, rental_property in rental_properties.items():
+    print(username + " has " + rental_property + " to rent.")

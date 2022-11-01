@@ -129,17 +129,47 @@
 # for username, rental_property in rental_properties.items():
 #     print(username + " has " + rental_property + " to rent.")
 
-# Using muliple lists
-shop_ingredients = ['pepperoni','pineapple','onions','peppers','sausage']
+# # Using muliple lists
+# from pickle import TRUE
 
-requested_ingredients = ['onions','peppers','sausage']
 
-for requested_ingredient in requested_ingredients:
-    if requested_ingredient in shop_ingredients:
-        print(f"Adding {requested_ingredient}.")
-    else:
-        print("We don't have the requested topping(s)")
-        break
+# shop_ingredients = ['pepperoni','pineapple','onions','peppers','sausage']
 
-print(" ")
-print("Finished with this order.")
+# requested_ingredients = ['onions','peppers','sausage']
+
+# for requested_ingredient in requested_ingredients:
+#     if requested_ingredient in shop_ingredients:
+#         print(f"Adding {requested_ingredient}.")
+#     else:
+#         print("We don't have the requested topping(s)")
+#         break
+
+# print(" ")
+# print("Finished with this order.")
+
+# # 5-8 Hello Admin
+# username_list = ['admin','master','billing','policy','legal']
+
+# login_manager = True
+
+# while login_manager:
+#     login_message = "Welcome to the login page."
+#     user_login = input("Please enter your username: ")
+#     user_logi = user_login
+#     report_status = "Nothing new to report."
+#     if user_logi in username_list:
+#         if user_logi == "admin":
+#             print(input(f"Hello {user_logi} would you like to see a status report? "))
+#             if 'yes':
+#                 print(report_status)
+#             else:
+#                 print(leave_option)
+#         else:
+#             print(f"Hello {user_login} thank you for login in again.")
+#     else:
+#         print("Access denied.")
+#     leave_option = input("Do you wish to continue? 'Yes or no'")
+#     if leave_option == 'no':
+#         login_manager = False
+# print("This session is complete.")
+

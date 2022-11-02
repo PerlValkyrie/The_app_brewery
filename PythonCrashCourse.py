@@ -173,3 +173,22 @@
 #         login_manager = False
 # print("This session is complete.")
 
+# A Object Oriented Programming
+
+class Car():
+    body = "sedan"
+    color = "blue"
+    wheels = 4
+    wheels_traction = 7
+    windows = 4
+    doors = 4
+
+    def __init__(self, damage, health):
+        self.damage = damage
+        self.health = health
+
+chevy = Car(21, 92)
+
+print(chevy.damage)
+print(chevy.wheels_traction)
+print(chevy.health)

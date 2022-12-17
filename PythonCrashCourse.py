@@ -175,20 +175,52 @@
 
 # A Object Oriented Programming
 
-class Car():
-    body = "sedan"
-    color = "blue"
-    wheels = 4
-    wheels_traction = 7
-    windows = 4
-    doors = 4
+# class Car():
+#     body = "sedan"
+#     color = "blue"
+#     wheels = 4
+#     wheels_traction = 7
+#     windows = 4
+#     doors = 4
 
-    def __init__(self, damage, health):
-        self.damage = damage
-        self.health = health
+#     def __init__(self, damage, health):
+#         self.damage = damage
+#         self.health = health
 
-chevy = Car(21, 92)
+# chevy = Car(21, 92)
 
-print(chevy.damage)
-print(chevy.wheels_traction)
-print(chevy.health)
+# print(chevy.damage)
+# print(chevy.wheels_traction)
+# print(chevy.health)
+
+# Chapter 8 review
+# 8.3
+def make_shirt(size = 'xl', text = 'Wakanda Forever'):
+    print(f"The size of the shirt is {size} and the text is {text}.")
+
+make_shirt('sm')
+
+
+
+
+
+# Creating Multiple Instances Chapter 9
+
+# class Dog:
+#     """A simple attempt to model a dog."""
+    
+#     def _init_(self, name, age):
+#         """Initialize name and age attributes."""
+#         self.name = name
+#         self.age = age
+
+#     def sit(self):
+#         """Simulate a dog sitting in repsonse to a command"""
+#         print(f"{self.name} is now sitting.")
+
+#     def roll_over(self):
+#         """Simulate rolling over in response to a command."""
+#         print(f"{self.name} rolled over!")
+
+
+        

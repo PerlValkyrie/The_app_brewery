@@ -64,8 +64,24 @@ import re
 # Using functions with regex
 
 
-# Sets practice
-
-pattern_int = re.compile('[0-7]')
-random_numbers = pattern_int.search('67383')
+# Regular Expressions
+# re.complie()
+pattern = re.compile('67383')
+random_numbers = pattern.search('67383')
 print(random_numbers)
+
+# re.match()
+match = pattern.match('abcd123')
+print(match)
+
+# Accessing the span of the match
+# print(match.span())
+
+# re.findall()
+finders = pattern.findall('123abcd abcd123 abcd abcabc acb')
+print(finders)
+
+# re.search()
+random_string = '123 123 234 abcd abc'
+search = pattern.search(random_string)
+print(search)

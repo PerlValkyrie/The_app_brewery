@@ -194,11 +194,105 @@
 # print(chevy.health)
 
 # Chapter 8 review
-# 8.3
-def make_shirt(size = 'xl', text = 'Wakanda Forever'):
-    print(f"The size of the shirt is {size} and the text is {text}.")
+# 8.3 T-Shirt
+# def make_shirt(size = 'l', text = 'I love Python'):
+#     print(f"The size of the shirt is {size} and the text is {text}.")
 
-make_shirt('sm')
+# print("\n8.3 T-Shirt section:")
+# make_shirt('sm')
+# make_shirt()
+# make_shirt(text = 'Die hard')
+
+# #8-4 Large Shirts
+# print("\n8.4 Large Shirts section:")
+# make_shirt(text= 'I love Python')
+# make_shirt(size = 'medium')
+# make_shirt(size = 'xxl', text= 'There can be only one!')
+
+# # 8.5 Cities
+# def describe_city(city = 'Reykjavik', country = 'Iceland'):
+#     print(f'{city} is in {country}.')
+
+# print("\n8.5 Cities section:")
+# describe_city()
+
+# Returning a Simple Value
+# def get_formatted_name(first_name, last_name):
+#     """Return a full name, neatly formatted."""
+#     full_name = first_name + ' ' + last_name
+#     return full_name.title()
+
+# musician = get_formatted_name('jimi', 'hendrix')
+# print(musician)
+
+
+# def get_formatted_name(first_name, middle_name, last_name):
+#     """Receive full name and format."""
+#     middle_name = ' '
+#     if middle_name:
+#         full_name = first_name + ' ' + middle_name + ' ' + last_name
+#     else:
+#         full_name = first_name + ' ' + last_name
+#     return full_name.title()
+
+# username = get_formatted_name('randy', 'bernard', 'jenkins')
+# print(username)
+# username = get_formatted_name('randy', 'jenkins')
+# print(username)
+
+# Returning a Dictionary
+# def build_person(first_name, last_name):
+#     """Return a dictionary of information about a person."""
+#     person = {'first': first_name, 'last': last_name}
+#     return person
+
+# musician = build_person('randy', 'jenkins')
+# print(musician)
+
+# # Adding Age
+# def build_person(first_name, last_name, age=''):
+#     person = {'first': first_name, 'last': last_name}
+#     if age:
+#         person['age'] = age
+#     return person
+
+# musician = build_person('jimi', 'hendrix', age=27)
+# print(musician)
+
+# Using a function with a while loop
+# def get_formatted_name(first_name, last_name):
+#     """Return a full name, neatly formatted."""
+#     full_name = first_name + ' ' + last_name
+#     return full_name.title()
+
+# # This is an infinite loop!
+# while True:
+#     print("\nPlease tell me your name: (enter 'exit' at any time to quit.)")
+#     f_name = input("First name: ")
+#     if f_name == 'exit':
+#         break
+
+#     l_name = input("Last name: ")
+#     if l_name == 'exit':
+#         break
+
+#     formatted_name = get_formatted_name(f_name, l_name)
+#     print("\nHello, " + formatted_name + "!")
+
+# 8-6 City Names (Try it yourself)
+def city_country(city, country):
+    """Return a entered city and country."""
+    city_name = city + ', ' + country
+    return city_name
+
+print("Enter a city and country. (Press exit at any time to leave)")
+city = input("Please enter a city: ")
+country = input("Please enter a country: ")
+
+formatted_city = city_country(city, country)
+print("\nWelcome, we will send you to " + formatted_city + ".")
+
+# 8-7 Album (Try it yourself)
 
 
 
